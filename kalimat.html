@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>🎉 Happy Birthday!</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="lstyle.css">
 </head>
 <body>
     <h1 id="greeting"></h1>
@@ -16,12 +16,13 @@
     <div class="balloon" style="left:80%; background:orange;"></div>
     <canvas id="confetti"></canvas>
     <audio autoplay loop>
-        <source src="musik.mp3" type="audio/mpeg">
+        <source src="music.mp3" type="audio/mpeg">
     </audio>
-    <script src="script.js"></script>
+    <script src="ltscript.js"></script>
     <script>
         document.getElementById("greeting").innerText = "🎉 Selamat Ulang Tahun, " + localStorage.getItem("name") + "! 🎂";
         startConfetti();
     </script>
 </body>
 </html>
+
