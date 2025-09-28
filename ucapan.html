@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎉 Happy Birthday!</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="greeting"></h1>
+    <p>Semoga harimu penuh kebahagiaan, selalu menyenangkan, tidak bersedih-sedih 💖</p>
+    <p>LOVE U SO MUCH ADIIKKU SAYANG YANG MANIS 💖💖💖💖💖💖💖💖</p>
+    <div class="balloon" style="left:20%; background:pink;"></div>
+    <div class="balloon" style="left:40%; background:lightblue;"></div>
+    <div class="balloon" style="left:60%; background:yellow;"></div>
+    <div class="balloon" style="left:80%; background:orange;"></div>
+    <canvas id="confetti"></canvas>
+    <audio autoplay loop>
+        <source src="musik.mp3" type="audio/mpeg">
+    </audio>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("greeting").innerText = "🎉 Selamat Ulang Tahun, " + localStorage.getItem("name") + "! 🎂";
+        startConfetti();
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+.container { text-align: center; }
+input { padding: 10px; font-size: 1.2em; border-radius: 5px; border: none; margin-bottom: 20px; }
+button { padding: 10px 20px; font-size: 1.2em; border-radius: 5px; border: none; background: #ff69b4; color: white; cursor: pointer; }
+h1 { font-size: 3em; margin-bottom: 10px; }
+p { font-size: 1.5em; }
+.balloon {
+    position: absolute;
+    bottom: -150px;
+    width: 60px;
+    height: 80px;
+    border-radius: 50%;
+    animation: floatUp 8s infinite;
+}
+@keyframes floatUp {
+    0% { bottom: -150px; opacity: 0; transform: scale(0.8); }
+    50% { opacity: 1; }
+    100% { bottom: 100%; opacity: 0; transform: scale(1.2); }
+}
+canvas { position: absolute; top: 0; left: 0; pointer-events: none; }
