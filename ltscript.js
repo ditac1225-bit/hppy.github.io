@@ -1,7 +1,7 @@
 function goToGreeting() {
     const name = document.getElementById("nameInput").value || "Teman";
     localStorage.setItem("name", name);
-    window.location.href = "ucapan.html";
+    window.location.href = "kalimat.html";
 }
 
 function startConfetti() {
@@ -50,3 +50,4 @@ function startConfetti() {
 
     setInterval(drawConfetti,20);
 }
+
